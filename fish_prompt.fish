@@ -11,5 +11,5 @@ function fish_prompt
     test $code -ne 0; and hulk::err; or hulk::snd
   end
   printf (hulk::dim)(date +%H(hulk::status::color):(hulk::dim)%M)(off)
-  printf (hulk::status::color)" ≡ "(off)
+  printf (hulk::status::color)" λ "(off)
 end

@@ -34,10 +34,10 @@ function fish_right_prompt
   end
 
   if git_is_repo
-    echo (hulk::status::color)" ≡ "(hulk::snd)(begin
-      git_is_touched; and hulk::branch_name; or echo (hulk::dim)(hulk::branch_name)
+    echo (hulk::status::color)" λ "(hulk::err)(begin
+      git_is_touched; and hulk::branch_name; or echo (hulk::snd)(hulk::branch_name)
     end)(off)
   else
-    echo (hulk::status::color)" ≡"(off)
+    echo (hulk::status::color)" λ"(off)
   end
 end
